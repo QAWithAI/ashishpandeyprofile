@@ -3,9 +3,9 @@ import { Mail, Github, Linkedin, ArrowUpRight } from "lucide-react";
 import { Section } from "./Section";
 
 const channels = [
-  { icon: Linkedin, label: "LinkedIn", value: "/in/alex-carter", href: "https://linkedin.com" },
-  { icon: Github, label: "GitHub", value: "@alexcarter-dev", href: "https://github.com" },
-  { icon: Mail, label: "Email", value: "hello@alexcarter.dev", href: "mailto:hello@alexcarter.dev" },
+  { icon: Linkedin, label: "LinkedIn", value: "/in/ashish-pandey-1875a9243", href: "https://www.linkedin.com/in/ashish-pandey-1875a9243/" },
+  { icon: Github, label: "GitHub", value: "@ashish-pandey", href: "https://github.com/" },
+  { icon: Mail, label: "Email", value: "ashish.pandey@example.com", href: "mailto:ashish.pandey@example.com" },
 ];
 
 export function Contact() {
