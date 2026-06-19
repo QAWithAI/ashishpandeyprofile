@@ -2,28 +2,30 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/portfolio/Nav";
 import { Hero } from "@/components/portfolio/Hero";
 import { About } from "@/components/portfolio/About";
+import { Experience } from "@/components/portfolio/Experience";
 import { Skills } from "@/components/portfolio/Skills";
 import { Projects } from "@/components/portfolio/Projects";
-import { Certifications } from "@/components/portfolio/Certifications";
-import { GitHubStats } from "@/components/portfolio/GitHubStats";
 import { Timeline } from "@/components/portfolio/Timeline";
+import { AIRoadmap } from "@/components/portfolio/AIRoadmap";
+import { GitHubStats } from "@/components/portfolio/GitHubStats";
+import { Certifications } from "@/components/portfolio/Certifications";
 import { Contact } from "@/components/portfolio/Contact";
 import { Footer } from "@/components/portfolio/Footer";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Ashish Kumar Pandey — QA Automation Engineer & Python Developer" },
+      { title: "Ashish Kumar Pandey — Software Quality Team Lead | AI & ML Enthusiast" },
       {
         name: "description",
         content:
-          "Portfolio of Ashish Kumar Pandey, QA Automation Engineer and Python Developer specializing in Playwright, Pytest, and CI/CD pipelines.",
+          "Ashish Kumar Pandey — Software Quality Team Lead with 13+ years in QA automation across Banking, Telecom, Healthcare, ERP and Salesforce. Expanding into Python, Playwright, ML and AI-powered test automation.",
       },
-      { property: "og:title", content: "Ashish Kumar Pandey — QA Automation Engineer & Python Developer" },
+      { property: "og:title", content: "Ashish Kumar Pandey — Software Quality Team Lead | AI & ML Enthusiast" },
       {
         property: "og:description",
         content:
-          "Portfolio of Ashish Kumar Pandey, QA Automation Engineer and Python Developer specializing in Playwright, Pytest, and CI/CD pipelines.",
+          "13+ years in QA automation and leadership. Selenium, REST Assured, Karate, AccelQ — now expanding into Python, Playwright, Machine Learning and AI-powered testing.",
       },
     ],
   }),
@@ -37,11 +39,13 @@ function Index() {
       <main>
         <Hero />
         <About />
+        <Experience />
         <Skills />
         <Projects />
-        <Certifications />
-        <GitHubStats />
         <Timeline />
+        <AIRoadmap />
+        <GitHubStats />
+        <Certifications />
         <Contact />
       </main>
       <Footer />

@@ -1,12 +1,12 @@
 import { motion } from "motion/react";
 import { Section } from "./Section";
-import { Sparkles, Target, Rocket, Building2 } from "lucide-react";
+import { Users, Target, Building2, Sparkles } from "lucide-react";
 
 const highlights = [
-  { icon: Target, title: "13+ Years in QE", text: "Lead-level experience designing and maintaining enterprise automation frameworks at scale." },
-  { icon: Building2, title: "Multi-domain expertise", text: "Banking, Healthcare, Telecom, E-Commerce, Fleet, ERP, SaaS, and IoT connectivity." },
-  { icon: Sparkles, title: "AI-powered QA", text: "Building AI agents, prompt evaluation, and n8n workflows for the next era of quality." },
-  { icon: Rocket, title: "Always learning", text: "Currently mastering Playwright + Python/TS, AccelQ, Karate, Agentic AI, and Promptfoo." },
+  { icon: Target, title: "13+ years in QA", text: "Hands-on testing and automation experience, from individual contributor to Software Quality Team Lead." },
+  { icon: Building2, title: "Enterprise domains", text: "Delivered quality across Banking, Telecom, Healthcare, ERP and Salesforce platforms." },
+  { icon: Users, title: "Team leadership", text: "Lead QA teams, define automation strategy, and drive enterprise-wide testing initiatives." },
+  { icon: Sparkles, title: "Continuous learning", text: "Currently expanding into Python, Playwright, GitHub Actions, Machine Learning and Generative AI." },
 ];
 
 export function About() {
@@ -15,7 +15,7 @@ export function About() {
       id="about"
       eyebrow="01 / About"
       title="About Me"
-      description="Lead QA Automation Engineer with 13+ years transforming traditional QA into AI-powered Quality Engineering. I architect frameworks, ship reliable test suites, and bring intelligent automation to every pipeline I touch."
+      description="I'm a Software Quality Team Lead with 13+ years of experience in software testing and QA automation. I've spent my career building reliable test frameworks, leading delivery teams, and bringing structure to quality engineering across complex enterprise systems. Today, I'm focused on the next evolution of QA — combining proven automation expertise with Machine Learning and AI-powered testing."
     >
       <div className="grid md:grid-cols-2 gap-5">
         {highlights.map((h, i) => (

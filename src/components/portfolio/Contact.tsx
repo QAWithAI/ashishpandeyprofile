@@ -10,7 +10,12 @@ const channels = [
 
 export function Contact() {
   return (
-    <Section id="contact" eyebrow="08 / Connect" title="Let's build intelligent automation" description="Open to Lead QA, SDET, and AI Automation roles. Quality is never an accident — it's the result of intelligent effort, continuous learning, and relentless automation.">
+    <Section
+      id="contact"
+      eyebrow="10 / Connect"
+      title="Let's talk about quality at scale"
+      description="Open to Software Quality leadership, SDET, and AI-powered test automation roles. Happy to connect on QA strategy, automation frameworks, or AI in testing."
+    >
       <div className="grid sm:grid-cols-3 gap-4">
         {channels.map((c, i) => (
           <motion.a

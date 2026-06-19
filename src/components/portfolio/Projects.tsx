@@ -19,45 +19,65 @@ const projects: {
   mock: Mock;
 }[] = [
   {
-    name: "Playwright Python Automation Framework",
+    name: "Selenium + Java Automation Framework",
     description:
-      "Enterprise-ready framework: Page Object Model, parallel execution, Pytest, HTML reports, logging, screenshot capture, and CI/CD integration.",
-    tags: ["Playwright", "Python", "Pytest", "POM"],
-    href: "https://github.com/",
-    stars: 0,
-    forks: 0,
-    accent: "#2ead33",
-    mock: {
-      kind: "code",
-      lines: [
-        [{ tok: "from ", cls: "text-[#ff7b72]" }, { tok: "playwright.sync_api ", cls: "text-foreground" }, { tok: "import ", cls: "text-[#ff7b72]" }, { tok: "Page", cls: "text-[#d2a8ff]" }],
-        [{ tok: "class ", cls: "text-[#ff7b72]" }, { tok: "LoginPage", cls: "text-[#d2a8ff]" }, { tok: ":", cls: "text-foreground" }],
-        [{ tok: "    def ", cls: "text-[#ff7b72]" }, { tok: "login", cls: "text-[#d2a8ff]" }, { tok: "(self, user, pwd):", cls: "text-foreground" }],
-        [{ tok: "        self", cls: "text-[#79c0ff]" }, { tok: ".page.fill(", cls: "text-foreground" }, { tok: "\"#user\"", cls: "text-[#a5d6ff]" }, { tok: ", user)", cls: "text-foreground" }],
-        [{ tok: "        self", cls: "text-[#79c0ff]" }, { tok: ".page.click(", cls: "text-foreground" }, { tok: "\"#submit\"", cls: "text-[#a5d6ff]" }, { tok: ")", cls: "text-foreground" }],
-      ],
-    },
-  },
-  {
-    name: "Selenium Java Automation Framework",
-    description:
-      "Enterprise-grade Selenium + Java framework with Page Object Model, TestNG/JUnit, Extent Reports, Log4j logging, parallel execution, and CI/CD.",
-    tags: ["Selenium", "Java", "TestNG", "Extent Reports"],
+      "Enterprise Selenium framework using Java, TestNG and Cucumber. Page Object Model, data-driven tests, Extent Reports, parallel execution and Jenkins integration.",
+    tags: ["Selenium", "Java", "TestNG", "Cucumber"],
     href: "https://github.com/",
     stars: 0,
     forks: 0,
     accent: "#f89820",
     mock: {
       kind: "browser",
-      title: "selenium-grid · parallel suite",
+      title: "selenium-suite · parallel run",
       cards: 3,
     },
   },
   {
-    name: "AI Automation Lab",
+    name: "REST Assured API Automation Suite",
     description:
-      "Experiments with AI Agents, prompt engineering, prompt evaluation (Promptfoo), workflow automation, and GenAI use cases for QE teams.",
-    tags: ["AI Agents", "Prompt Eng.", "Promptfoo", "GenAI"],
+      "API automation suite built with REST Assured: request/response validation, schema checks, auth flows, data-driven scenarios and reporting integrated with CI.",
+    tags: ["REST Assured", "Java", "API", "Jenkins"],
+    href: "https://github.com/",
+    stars: 0,
+    forks: 0,
+    accent: "#3fb950",
+    mock: {
+      kind: "code",
+      lines: [
+        [{ tok: "given", cls: "text-[#ff7b72]" }, { tok: "()", cls: "text-foreground" }],
+        [{ tok: "  .header(", cls: "text-foreground" }, { tok: "\"Authorization\"", cls: "text-[#a5d6ff]" }, { tok: ", token)", cls: "text-foreground" }],
+        [{ tok: "  .body(payload)", cls: "text-foreground" }],
+        [{ tok: ".when", cls: "text-[#ff7b72]" }, { tok: "().post(", cls: "text-foreground" }, { tok: "\"/v1/accounts\"", cls: "text-[#a5d6ff]" }, { tok: ")", cls: "text-foreground" }],
+        [{ tok: ".then", cls: "text-[#ff7b72]" }, { tok: "().statusCode(", cls: "text-foreground" }, { tok: "201", cls: "text-[#79c0ff]" }, { tok: ");", cls: "text-foreground" }],
+      ],
+    },
+  },
+  {
+    name: "Playwright + Python Learning Lab",
+    description:
+      "Personal lab where I'm building a Playwright + Python framework from scratch — fixtures, Page Object Model, Pytest reporting, and GitHub Actions CI.",
+    tags: ["Playwright", "Python", "Pytest", "GitHub Actions"],
+    href: "https://github.com/",
+    stars: 0,
+    forks: 0,
+    accent: "#2ead33",
+    mock: {
+      kind: "ci",
+      steps: [
+        { name: "Checkout", status: "ok" },
+        { name: "Setup Python 3.12", status: "ok" },
+        { name: "Install Playwright browsers", status: "ok" },
+        { name: "Run pytest suite", status: "run" },
+        { name: "Upload HTML report", status: "wait" },
+      ],
+    },
+  },
+  {
+    name: "AI-Powered QA Experiments",
+    description:
+      "Exploratory project combining LLMs with QA workflows — auto-generating test cases from requirements, summarising failures, and prototyping AI-assisted test review.",
+    tags: ["GenAI", "LLMs", "Python", "Prompting"],
     href: "https://github.com/",
     stars: 0,
     forks: 0,
@@ -65,43 +85,20 @@ const projects: {
     mock: {
       kind: "terminal",
       lines: [
-        { t: "$ promptfoo eval --config llm-qa.yaml", cls: "text-muted-foreground" },
-        { t: "→ agent: test-case-generator", cls: "text-foreground/80" },
-        { t: "✓ accuracy: 0.94", cls: "text-accent" },
-        { t: "✓ relevance: 0.91", cls: "text-accent" },
-        { t: "✓ hallucination: 0.02", cls: "text-accent" },
-        { t: "═══ 32 prompts evaluated ═══", cls: "text-primary" },
+        { t: "$ python generate_cases.py --story US-1042", cls: "text-muted-foreground" },
+        { t: "→ parsing acceptance criteria...", cls: "text-foreground/80" },
+        { t: "→ calling LLM for test ideas...", cls: "text-foreground/80" },
+        { t: "✓ 12 candidate test cases drafted", cls: "text-accent" },
+        { t: "✓ 4 negative scenarios suggested", cls: "text-accent" },
+        { t: "═══ review queue updated ═══", cls: "text-primary" },
       ],
     },
   },
-  {
-    name: "n8n Workflow Collection",
-    description:
-      "Production-ready n8n automations: email automation, lead management, notification systems, and AI-powered workflows triggered by webhooks.",
-    tags: ["n8n", "Automation", "Workflows", "AI"],
-    href: "https://github.com/",
-    stars: 0,
-    forks: 0,
-    accent: "#ea4b71",
-    mock: {
-      kind: "ci",
-      steps: [
-        { name: "Webhook trigger", status: "ok" },
-        { name: "Parse payload", status: "ok" },
-        { name: "AI classify (OpenAI)", status: "ok" },
-        { name: "Update CRM", status: "ok" },
-        { name: "Send notification", status: "run" },
-        { name: "Log to sheet", status: "wait" },
-      ],
-    },
-  },
-
 ];
 
 function MockPreview({ mock, accent }: { mock: Mock; accent: string }) {
   return (
     <div className="relative h-48 sm:h-52 rounded-lg border border-border bg-background/60 overflow-hidden">
-      {/* top chrome */}
       <div className="flex items-center gap-1.5 px-3 py-2 border-b border-border bg-surface/60">
         <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f56]" />
         <span className="h-2.5 w-2.5 rounded-full bg-[#ffbd2e]" />
@@ -170,7 +167,6 @@ function MockPreview({ mock, accent }: { mock: Mock; accent: string }) {
           </div>
         )}
       </div>
-      {/* soft glow */}
       <div
         className="pointer-events-none absolute inset-0 opacity-60"
         style={{ background: `radial-gradient(600px circle at 100% 100%, ${accent}18, transparent 60%)` }}
@@ -185,7 +181,7 @@ export function Projects() {
       id="projects"
       eyebrow="04 / Work"
       title="Featured Projects"
-      description="Selected open-source work showcasing the way I think about testing, automation, and code quality."
+      description="A mix of enterprise-style automation work and personal labs where I'm sharpening modern tooling and AI-powered testing."
     >
       <div className="grid md:grid-cols-2 gap-6">
         {projects.map((p, i) => (
