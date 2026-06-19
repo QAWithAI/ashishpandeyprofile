@@ -26,26 +26,26 @@ export function Hero() {
         >
           <div className="mb-6 inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-mono">
             <span className="h-2 w-2 rounded-full bg-success animate-pulse" />
-            <span className="text-muted-foreground">Available for opportunities</span>
+            <span className="text-muted-foreground">Open to QA leadership & AI automation roles</span>
             <Sparkles size={12} className="text-primary" />
           </div>
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold leading-[1.04] tracking-tight">
             Hi, I'm <span className="text-gradient">Ashish Kumar Pandey</span>
             <br />
-            transforming QA through
+            building reliable
             <br />
-            <span className="text-primary">AI-powered automation</span>
+            <span className="text-primary">quality at enterprise scale</span>
             <span className="cursor-blink" />
           </h1>
           <p className="mt-7 font-mono text-sm sm:text-base text-primary">
-            <span className="text-muted-foreground">{"// "}</span>Lead QA Automation Engineer{" "}
-            <span className="text-muted-foreground">·</span> Python · Playwright · Selenium · Java{" "}
-            <span className="text-muted-foreground">·</span> AI Automation · n8n
+            <span className="text-muted-foreground">{"// "}</span>Software Quality Team Lead{" "}
+            <span className="text-muted-foreground">·</span> AI &amp; Machine Learning Enthusiast
           </p>
           <p className="mt-6 max-w-2xl text-base sm:text-lg text-muted-foreground leading-relaxed">
-            13+ years in Software Quality Engineering, architecting enterprise automation frameworks
-            across Banking, Healthcare, Telecom, E-Commerce, ERP, SaaS, and IoT. Now building
-            intelligent automation with AI agents, prompt engineering, and n8n workflows.
+            13+ years in Software Testing and QA Automation across Banking, Telecom, Healthcare,
+            ERP and Salesforce. I lead teams, design automation strategy, and ship enterprise test
+            frameworks — while actively expanding into Python, Playwright, Machine Learning and
+            AI-powered test automation.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
@@ -88,19 +88,24 @@ export function Hero() {
               <span className="h-3 w-3 rounded-full bg-[#ff5f56]" />
               <span className="h-3 w-3 rounded-full bg-[#ffbd2e]" />
               <span className="h-3 w-3 rounded-full bg-[#27c93f]" />
-              <span className="ml-3 text-xs font-mono text-muted-foreground">~/portfolio · zsh</span>
+              <span className="ml-3 text-xs font-mono text-muted-foreground">~/profile · zsh</span>
             </div>
             <div className="p-5 font-mono text-sm leading-relaxed">
               <div className="text-muted-foreground">$ whoami</div>
-              <div className="text-foreground">ashish_pandey</div>
+              <div className="text-foreground">ashish_kumar_pandey</div>
               <div className="text-muted-foreground mt-2">$ cat profile.yaml</div>
-              <pre className="text-foreground/90 mt-1">{`role: Lead QA Automation Engineer
+              <pre className="text-foreground/90 mt-1">{`role: Software Quality Team Lead
 experience: 13+ years
-stack:
-  - Python · TypeScript · Java
-  - Playwright · Selenium · Pytest
-  - n8n · AI Agents · Prompt Eng.
-focus: AI-powered Quality Engineering`}</pre>
+domains:
+  - Banking · Telecom · Healthcare
+  - ERP · Salesforce
+core_stack:
+  - Selenium · TestNG · Cucumber
+  - REST Assured · Karate · AccelQ
+  - Jenkins · GitHub · Java
+learning:
+  - Python · Pytest · Playwright
+  - GitHub Actions · ML · GenAI`}</pre>
               <div className="text-muted-foreground mt-3">$ pytest --collect-only</div>
               <div className="text-accent">✓ enterprise frameworks ready</div>
               <div className="flex items-center mt-2">

@@ -3,10 +3,12 @@ import { Menu, X } from "lucide-react";
 
 const links = [
   { href: "#about", label: "About" },
+  { href: "#experience", label: "Experience" },
   { href: "#skills", label: "Skills" },
   { href: "#projects", label: "Projects" },
-  { href: "#certifications", label: "Certifications" },
   { href: "#timeline", label: "Journey" },
+  { href: "#ai-roadmap", label: "AI Roadmap" },
+  { href: "#certifications", label: "Certifications" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -31,9 +33,9 @@ export function Nav() {
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#top" className="font-display text-lg font-bold tracking-tight">
-          <span className="text-gradient">{"</>"}</span> Portfolio
+          <span className="text-gradient">{"</>"}</span> Ashish Kumar Pandey
         </a>
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-7">
           {links.map((l) => (
             <a
               key={l.href}
@@ -46,14 +48,14 @@ export function Nav() {
         </div>
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden rounded-md p-2 text-foreground"
+          className="lg:hidden rounded-md p-2 text-foreground"
           aria-label="Toggle menu"
         >
           {open ? <X size={20} /> : <Menu size={20} />}
         </button>
       </nav>
       {open && (
-        <div className="md:hidden border-t border-border bg-background/95 backdrop-blur-xl">
+        <div className="lg:hidden border-t border-border bg-background/95 backdrop-blur-xl">
           <div className="flex flex-col px-6 py-4 gap-3">
             {links.map((l) => (
               <a

@@ -3,19 +3,19 @@ import { Section } from "./Section";
 import { CheckCircle2, Circle } from "lucide-react";
 
 const milestones = [
-  { title: "Selenium & Java Mastery", desc: "Architected enterprise Selenium + Java frameworks with TestNG, Extent Reports, and CI/CD.", status: "done" },
-  { title: "API Testing & REST Assured", desc: "Built large-scale API automation suites with schema validation and data-driven flows.", status: "done" },
-  { title: "Python & Pytest", desc: "Adopted Pythonic patterns: fixtures, parametrization, async, and clean architecture.", status: "done" },
-  { title: "Playwright (Python + TypeScript)", desc: "Modern end-to-end testing, POM, parallel execution, trace viewer, HTML reports.", status: "current" },
-  { title: "n8n & Prompt Engineering", desc: "AI-powered workflows, email/lead automation, prompt design for QE use cases.", status: "current" },
-  { title: "Promptfoo & LLM Evaluation", desc: "Systematic evaluation of LLM outputs — accuracy, relevance, hallucination metrics.", status: "next" },
-  { title: "Agentic AI & RAG Testing", desc: "Building AI agents, RAG applications, and LLM testing pipelines.", status: "next" },
-  { title: "AccelQ & Karate Framework", desc: "Expanding low-code automation and BDD-style API testing toolkit.", status: "next" },
+  { title: "Manual & Functional Testing Foundations", desc: "Started my career building strong fundamentals in test design, defect lifecycle and enterprise SDLC.", status: "done" },
+  { title: "Selenium + Java Automation", desc: "Built and scaled Selenium frameworks with TestNG, Cucumber and Page Object Model across multiple enterprise programs.", status: "done" },
+  { title: "API Automation with REST Assured & Karate", desc: "Designed API automation suites with schema validation, auth flows and CI integration.", status: "done" },
+  { title: "AccelQ & Enterprise Test Strategy", desc: "Adopted AccelQ for low-code enterprise automation and shaped automation strategy across delivery teams.", status: "done" },
+  { title: "Software Quality Team Lead", desc: "Stepped into a leadership role — owning quality strategy, mentoring engineers and partnering with stakeholders.", status: "done" },
+  { title: "Python, Pytest & Playwright", desc: "Currently building modern test frameworks in Python with Pytest and Playwright, plus GitHub Actions CI.", status: "current" },
+  { title: "Machine Learning Foundations", desc: "Studying ML fundamentals — data handling, classical algorithms and model evaluation.", status: "current" },
+  { title: "Generative AI & AI-Powered Testing", desc: "Exploring LLMs and AI-assisted QA: test case generation, failure triage and intelligent automation.", status: "next" },
 ];
 
 export function Timeline() {
   return (
-    <Section id="timeline" eyebrow="07 / Roadmap" title="Learning Journey" description="The milestones that shaped where I am and where I'm headed.">
+    <Section id="timeline" eyebrow="06 / Journey" title="Learning Journey" description="A grounded view of where I started, where I am, and what I'm actively learning next.">
       <div className="relative">
         <div className="absolute left-[19px] top-2 bottom-2 w-px bg-border md:left-1/2 md:-translate-x-1/2" />
         <div className="space-y-8">
@@ -32,7 +32,6 @@ export function Timeline() {
                   isLeft ? "" : "md:[&>div:first-child]:order-2"
                 }`}
               >
-                {/* node */}
                 <div className="absolute left-0 md:left-1/2 md:-translate-x-1/2 top-2 z-10">
                   <div
                     className={`grid h-10 w-10 place-items-center rounded-full border-2 ${
