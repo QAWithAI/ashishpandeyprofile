@@ -1,0 +1,41 @@
+import { motion } from "motion/react";
+import { Award, BadgeCheck } from "lucide-react";
+import { Section } from "./Section";
+
+const certs = [
+  { name: "Python for Everybody", org: "Coursera • University of Michigan", year: "2024" },
+  { name: "Playwright Automation Masterclass", org: "Udemy", year: "2024" },
+  { name: "ISTQB Foundation Level", org: "ISTQB", year: "2023" },
+  { name: "GitHub Actions: Hands-on", org: "LinkedIn Learning", year: "2025" },
+];
+
+export function Certifications() {
+  return (
+    <Section id="certifications" eyebrow="05 / Credentials" title="Certifications" description="Continuous learning is non-negotiable in QA. Here's where I've sharpened my skills.">
+      <div className="grid sm:grid-cols-2 gap-5">
+        {certs.map((c, i) => (
+          <motion.div
+            key={c.name}
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: i * 0.06 }}
+            className="card-surface card-hover p-6 flex items-start gap-4"
+          >
+            <div className="shrink-0 grid h-12 w-12 place-items-center rounded-lg bg-gradient-primary text-primary-foreground">
+              <Award size={22} />
+            </div>
+            <div className="min-w-0 flex-1">
+              <div className="flex items-start justify-between gap-2">
+                <h3 className="font-semibold text-foreground">{c.name}</h3>
+                <BadgeCheck size={18} className="shrink-0 text-primary" />
+              </div>
+              <p className="text-sm text-muted-foreground mt-1">{c.org}</p>
+              <p className="text-xs font-mono text-primary mt-2">{c.year}</p>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </Section>
+  );
+}

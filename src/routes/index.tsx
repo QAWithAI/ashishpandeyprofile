@@ -1,29 +1,50 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Nav } from "@/components/portfolio/Nav";
+import { Hero } from "@/components/portfolio/Hero";
+import { About } from "@/components/portfolio/About";
+import { Skills } from "@/components/portfolio/Skills";
+import { Projects } from "@/components/portfolio/Projects";
+import { Certifications } from "@/components/portfolio/Certifications";
+import { GitHubStats } from "@/components/portfolio/GitHubStats";
+import { Timeline } from "@/components/portfolio/Timeline";
+import { Contact } from "@/components/portfolio/Contact";
+import { Footer } from "@/components/portfolio/Footer";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Alex Carter — QA Automation Engineer & Python Developer" },
+      {
+        name: "description",
+        content:
+          "Portfolio of Alex Carter, QA Automation Engineer and Python Developer specializing in Playwright, Pytest, and CI/CD pipelines.",
+      },
+      { property: "og:title", content: "Alex Carter — QA Automation Engineer & Python Developer" },
+      {
+        property: "og:description",
+        content:
+          "Portfolio of Alex Carter, QA Automation Engineer and Python Developer specializing in Playwright, Pytest, and CI/CD pipelines.",
+      },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-background text-foreground">
+      <Nav />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Certifications />
+        <GitHubStats />
+        <Timeline />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
 }
