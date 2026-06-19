@@ -3,13 +3,14 @@ import { Section } from "./Section";
 import { CheckCircle2, Circle } from "lucide-react";
 
 const milestones = [
-  { title: "Python Basics", desc: "Syntax, data structures, scripting fundamentals.", status: "done" },
-  { title: "Object-Oriented Programming", desc: "Classes, inheritance, dunder methods, SOLID.", status: "done" },
-  { title: "Git & GitHub", desc: "Branching, PR workflows, collaboration.", status: "done" },
-  { title: "Pytest", desc: "Fixtures, parametrization, markers, reporting.", status: "done" },
-  { title: "GitHub Actions", desc: "CI workflows, matrix builds, deployments.", status: "done" },
-  { title: "Playwright", desc: "End-to-end testing, POM, trace viewer.", status: "current" },
-  { title: "Machine Learning", desc: "Foundations of supervised & unsupervised learning.", status: "next" },
+  { title: "Selenium & Java Mastery", desc: "Architected enterprise Selenium + Java frameworks with TestNG, Extent Reports, and CI/CD.", status: "done" },
+  { title: "API Testing & REST Assured", desc: "Built large-scale API automation suites with schema validation and data-driven flows.", status: "done" },
+  { title: "Python & Pytest", desc: "Adopted Pythonic patterns: fixtures, parametrization, async, and clean architecture.", status: "done" },
+  { title: "Playwright (Python + TypeScript)", desc: "Modern end-to-end testing, POM, parallel execution, trace viewer, HTML reports.", status: "current" },
+  { title: "n8n & Prompt Engineering", desc: "AI-powered workflows, email/lead automation, prompt design for QE use cases.", status: "current" },
+  { title: "Promptfoo & LLM Evaluation", desc: "Systematic evaluation of LLM outputs — accuracy, relevance, hallucination metrics.", status: "next" },
+  { title: "Agentic AI & RAG Testing", desc: "Building AI agents, RAG applications, and LLM testing pipelines.", status: "next" },
+  { title: "AccelQ & Karate Framework", desc: "Expanding low-code automation and BDD-style API testing toolkit.", status: "next" },
 ];
 
 export function Timeline() {
