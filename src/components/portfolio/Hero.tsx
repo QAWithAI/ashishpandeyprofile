@@ -32,20 +32,20 @@ export function Hero() {
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold leading-[1.04] tracking-tight">
             Hi, I'm <span className="text-gradient">Ashish Kumar Pandey</span>
             <br />
-            building reliable software
+            transforming QA through
             <br />
-            through <span className="text-primary">automation</span>
+            <span className="text-primary">AI-powered automation</span>
             <span className="cursor-blink" />
           </h1>
           <p className="mt-7 font-mono text-sm sm:text-base text-primary">
-            <span className="text-muted-foreground">{"// "}</span>QA Automation Engineer{" "}
-            <span className="text-muted-foreground">·</span> Python Developer{" "}
-            <span className="text-muted-foreground">·</span> Playwright Enthusiast
+            <span className="text-muted-foreground">{"// "}</span>Lead QA Automation Engineer{" "}
+            <span className="text-muted-foreground">·</span> Python · Playwright · Selenium · Java{" "}
+            <span className="text-muted-foreground">·</span> AI Automation · n8n
           </p>
           <p className="mt-6 max-w-2xl text-base sm:text-lg text-muted-foreground leading-relaxed">
-            I design end-to-end test automation frameworks and write clean Python code.
-            Passionate about quality engineering, CI/CD pipelines, and turning complex
-            workflows into resilient, maintainable systems.
+            13+ years in Software Quality Engineering, architecting enterprise automation frameworks
+            across Banking, Healthcare, Telecom, E-Commerce, ERP, SaaS, and IoT. Now building
+            intelligent automation with AI agents, prompt engineering, and n8n workflows.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
@@ -64,13 +64,13 @@ export function Hero() {
             </a>
           </div>
           <div className="mt-10 flex items-center gap-5 text-muted-foreground">
-            <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors hover:-translate-y-0.5 inline-block" aria-label="GitHub">
+            <a href="https://github.com/" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors hover:-translate-y-0.5 inline-block" aria-label="GitHub">
               <Github size={20} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors hover:-translate-y-0.5 inline-block" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/ashish-pandey-1875a9243/" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors hover:-translate-y-0.5 inline-block" aria-label="LinkedIn">
               <Linkedin size={20} />
             </a>
-            <a href="mailto:hello@example.com" className="hover:text-primary transition-colors hover:-translate-y-0.5 inline-block" aria-label="Email">
+            <a href="mailto:ashish.pandey@example.com" className="hover:text-primary transition-colors hover:-translate-y-0.5 inline-block" aria-label="Email">
               <Mail size={20} />
             </a>
           </div>
@@ -92,16 +92,17 @@ export function Hero() {
             </div>
             <div className="p-5 font-mono text-sm leading-relaxed">
               <div className="text-muted-foreground">$ whoami</div>
-              <div className="text-foreground">alex_carter</div>
-              <div className="text-muted-foreground mt-2">$ cat skills.json</div>
-              <pre className="text-foreground/90 mt-1">{`{
-  "languages": ["Python", "TypeScript"],
-  "frameworks": ["Playwright", "Pytest"],
-  "focus": "automation + DX",
-  "learning": "ML, CI/CD"
-}`}</pre>
+              <div className="text-foreground">ashish_pandey</div>
+              <div className="text-muted-foreground mt-2">$ cat profile.yaml</div>
+              <pre className="text-foreground/90 mt-1">{`role: Lead QA Automation Engineer
+experience: 13+ years
+stack:
+  - Python · TypeScript · Java
+  - Playwright · Selenium · Pytest
+  - n8n · AI Agents · Prompt Eng.
+focus: AI-powered Quality Engineering`}</pre>
               <div className="text-muted-foreground mt-3">$ pytest --collect-only</div>
-              <div className="text-accent">✓ 247 tests collected</div>
+              <div className="text-accent">✓ enterprise frameworks ready</div>
               <div className="flex items-center mt-2">
                 <span className="text-primary">$</span>
                 <span className="cursor-blink ml-2" />

@@ -1,18 +1,25 @@
 import { motion } from "motion/react";
-import { Code2, TestTube2, FileCode, GitBranch, Github, Workflow, FlaskConical, Network, Database } from "lucide-react";
+import { Code2, TestTube2, FileCode, GitBranch, Coffee, Workflow, FlaskConical, Network, Database, Bot, Brain, Cpu } from "lucide-react";
 import { Section } from "./Section";
 
 const skills = [
-  { name: "Python", icon: Code2, level: 92, color: "#3776ab" },
-  { name: "Playwright", icon: TestTube2, level: 85, color: "#2ead33" },
-  { name: "TypeScript", icon: FileCode, level: 78, color: "#3178c6" },
-  { name: "Git", icon: GitBranch, level: 90, color: "#f05033" },
-  { name: "GitHub", icon: Github, level: 92, color: "#e6edf3" },
-  { name: "GitHub Actions", icon: Workflow, level: 82, color: "#2088ff" },
+  { name: "Playwright", icon: TestTube2, level: 90, color: "#2ead33" },
+  { name: "Selenium", icon: TestTube2, level: 95, color: "#43b02a" },
+  { name: "Python", icon: Code2, level: 88, color: "#3776ab" },
+  { name: "Java", icon: Coffee, level: 92, color: "#f89820" },
+  { name: "TypeScript", icon: FileCode, level: 80, color: "#3178c6" },
   { name: "Pytest", icon: FlaskConical, level: 88, color: "#0a9edc" },
-  { name: "API Testing", icon: Network, level: 84, color: "#3fb950" },
-  { name: "SQL", icon: Database, level: 70, color: "#f29111" },
+  { name: "API / REST Assured", icon: Network, level: 92, color: "#3fb950" },
+  { name: "Karate Framework", icon: FlaskConical, level: 78, color: "#8e44ad" },
+  { name: "n8n Automation", icon: Workflow, level: 85, color: "#ea4b71" },
+  { name: "Prompt Engineering", icon: Brain, level: 86, color: "#ff7b72" },
+  { name: "AI Agents", icon: Bot, level: 80, color: "#00e5ff" },
+  { name: "CI/CD & GitHub Actions", icon: Workflow, level: 88, color: "#2088ff" },
+  { name: "Git & GitHub", icon: GitBranch, level: 94, color: "#f05033" },
+  { name: "SQL / MySQL", icon: Database, level: 82, color: "#f29111" },
+  { name: "AWS / Azure", icon: Cpu, level: 72, color: "#ff9900" },
 ];
+
 
 export function Skills() {
   return (
