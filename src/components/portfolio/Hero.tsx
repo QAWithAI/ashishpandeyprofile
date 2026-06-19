@@ -92,16 +92,17 @@ export function Hero() {
             </div>
             <div className="p-5 font-mono text-sm leading-relaxed">
               <div className="text-muted-foreground">$ whoami</div>
-              <div className="text-foreground">alex_carter</div>
-              <div className="text-muted-foreground mt-2">$ cat skills.json</div>
-              <pre className="text-foreground/90 mt-1">{`{
-  "languages": ["Python", "TypeScript"],
-  "frameworks": ["Playwright", "Pytest"],
-  "focus": "automation + DX",
-  "learning": "ML, CI/CD"
-}`}</pre>
+              <div className="text-foreground">ashish_pandey</div>
+              <div className="text-muted-foreground mt-2">$ cat profile.yaml</div>
+              <pre className="text-foreground/90 mt-1">{`role: Lead QA Automation Engineer
+experience: 13+ years
+stack:
+  - Python · TypeScript · Java
+  - Playwright · Selenium · Pytest
+  - n8n · AI Agents · Prompt Eng.
+focus: AI-powered Quality Engineering`}</pre>
               <div className="text-muted-foreground mt-3">$ pytest --collect-only</div>
-              <div className="text-accent">✓ 247 tests collected</div>
+              <div className="text-accent">✓ enterprise frameworks ready</div>
               <div className="flex items-center mt-2">
                 <span className="text-primary">$</span>
                 <span className="cursor-blink ml-2" />
