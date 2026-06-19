@@ -70,7 +70,7 @@ export function Hero() {
             <a href="https://www.linkedin.com/in/ashish-pandey-1875a9243/" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors hover:-translate-y-0.5 inline-block" aria-label="LinkedIn">
               <Linkedin size={20} />
             </a>
-            <a href="mailto:ashish.pandey@example.com" className="hover:text-primary transition-colors hover:-translate-y-0.5 inline-block" aria-label="Email">
+            <a href="mailto:ashishkpandey25@gmail.com" className="hover:text-primary transition-colors hover:-translate-y-0.5 inline-block" aria-label="Email">
               <Mail size={20} />
             </a>
           </div>
