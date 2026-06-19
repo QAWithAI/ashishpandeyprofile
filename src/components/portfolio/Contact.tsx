@@ -5,7 +5,7 @@ import { Section } from "./Section";
 const channels = [
   { icon: Linkedin, label: "LinkedIn", value: "/in/ashish-pandey-1875a9243", href: "https://www.linkedin.com/in/ashish-pandey-1875a9243/" },
   { icon: Github, label: "GitHub", value: "@ashish-pandey", href: "https://github.com/" },
-  { icon: Mail, label: "Email", value: "ashish.pandey@example.com", href: "mailto:ashish.pandey@example.com" },
+  { icon: Mail, label: "Email", value: "ashishkpandey25@gmail.com", href: "mailto:ashishkpandey25@gmail.com" },
 ];
 
 export function Contact() {
