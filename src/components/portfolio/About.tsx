@@ -1,11 +1,12 @@
 import { motion } from "motion/react";
 import { Section } from "./Section";
-import { Sparkles, Target, Rocket } from "lucide-react";
+import { Sparkles, Target, Rocket, Building2 } from "lucide-react";
 
 const highlights = [
-  { icon: Target, title: "Quality-first mindset", text: "I obsess over edge cases and reliability — flaky tests are bugs too." },
-  { icon: Sparkles, title: "Pythonic thinking", text: "Clean code, type hints, fixtures, and idiomatic patterns over clever hacks." },
-  { icon: Rocket, title: "Always learning", text: "Currently deep-diving into advanced Python, Playwright, CI/CD, and ML." },
+  { icon: Target, title: "13+ Years in QE", text: "Lead-level experience designing and maintaining enterprise automation frameworks at scale." },
+  { icon: Building2, title: "Multi-domain expertise", text: "Banking, Healthcare, Telecom, E-Commerce, Fleet, ERP, SaaS, and IoT connectivity." },
+  { icon: Sparkles, title: "AI-powered QA", text: "Building AI agents, prompt evaluation, and n8n workflows for the next era of quality." },
+  { icon: Rocket, title: "Always learning", text: "Currently mastering Playwright + Python/TS, AccelQ, Karate, Agentic AI, and Promptfoo." },
 ];
 
 export function About() {
@@ -14,9 +15,9 @@ export function About() {
       id="about"
       eyebrow="01 / About"
       title="About Me"
-      description="I'm passionate about automation testing, Python development, and continuous learning. I believe great software is shipped with great tests behind it — and I love being the person who builds them."
+      description="Lead QA Automation Engineer with 13+ years transforming traditional QA into AI-powered Quality Engineering. I architect frameworks, ship reliable test suites, and bring intelligent automation to every pipeline I touch."
     >
-      <div className="grid md:grid-cols-3 gap-5">
+      <div className="grid md:grid-cols-2 gap-5">
         {highlights.map((h, i) => (
           <motion.div
             key={h.title}
