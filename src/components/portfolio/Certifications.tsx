@@ -3,10 +3,11 @@ import { Award, BadgeCheck } from "lucide-react";
 import { Section } from "./Section";
 
 const certs = [
-  { name: "Python for Everybody", org: "Coursera • University of Michigan", year: "2024" },
-  { name: "Playwright Automation Masterclass", org: "Udemy", year: "2024" },
-  { name: "ISTQB Foundation Level", org: "ISTQB", year: "2023" },
-  { name: "GitHub Actions: Hands-on", org: "LinkedIn Learning", year: "2025" },
+  { name: "Python for Everybody", org: "Coursera • University of Michigan", year: "2026", href: "https://www.coursera.org/learn/python/home/module/3" },
+  { name: "Python Data Structures", org: "Coursera • University of Michigan", year: "2026", href: "https://www.coursera.org/learn/python-data/home/module/3" },
+  { name: "DeepSeek & n8n Certification", org: "Coursera • Board Infinity", year: "2026", href: "https://www.coursera.org/account/accomplishments/verify/NLRDPITD21KJ" },
+  { name: "Google AI Essentials", org: "Coursera • Google", year: "2026", href: "https://www.coursera.org/account/accomplishments/specialization/3FQ5HBVYP6PD" },
+  { name: "Building with the Claude API", org: "Anthropic", year: "2026", href: "https://verify.skilljar.com/c/8ufv9jdo75ru" },
 ];
 
 export function Certifications() {
