@@ -1,40 +1,46 @@
 import { motion } from "motion/react";
-import { ArrowRight, Mail, Github, Linkedin } from "lucide-react";
+import { ArrowRight, Mail, Github, Linkedin, Sparkles } from "lucide-react";
 
 export function Hero() {
   return (
-    <section id="top" className="relative min-h-screen flex items-center px-6 pt-32 pb-20 overflow-hidden">
+    <section id="top" className="relative min-h-screen flex items-center px-6 pt-32 pb-24 overflow-hidden">
       {/* grid bg */}
       <div
-        className="absolute inset-0 -z-10 opacity-[0.08]"
+        className="absolute inset-0 -z-10 opacity-[0.07]"
         style={{
           backgroundImage:
-            "linear-gradient(to right, oklch(0.97 0.005 250) 1px, transparent 1px), linear-gradient(to bottom, oklch(0.97 0.005 250) 1px, transparent 1px)",
-          backgroundSize: "60px 60px",
+            "linear-gradient(to right, oklch(0.94 0.01 250) 1px, transparent 1px), linear-gradient(to bottom, oklch(0.94 0.01 250) 1px, transparent 1px)",
+          backgroundSize: "56px 56px",
           maskImage: "radial-gradient(ellipse at center, black 30%, transparent 75%)",
         }}
       />
-      <div className="mx-auto max-w-6xl w-full">
+      {/* floating blobs */}
+      <div className="absolute top-32 -right-24 h-80 w-80 rounded-full bg-primary/20 blur-[120px] -z-10 animate-float" />
+      <div className="absolute bottom-10 -left-20 h-72 w-72 rounded-full bg-accent/15 blur-[120px] -z-10 animate-float" style={{ animationDelay: "2s" }} />
+
+      <div className="mx-auto max-w-6xl w-full grid lg:grid-cols-[1.4fr_1fr] gap-12 items-center">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          className="max-w-3xl"
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
         >
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-surface/80 backdrop-blur px-4 py-1.5 text-xs font-mono">
-            <span className="h-2 w-2 rounded-full bg-primary animate-pulse" />
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-mono">
+            <span className="h-2 w-2 rounded-full bg-success animate-pulse" />
             <span className="text-muted-foreground">Available for opportunities</span>
+            <Sparkles size={12} className="text-primary" />
           </div>
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold leading-[1.05] tracking-tight">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold leading-[1.04] tracking-tight">
             Hi, I'm <span className="text-gradient">Alex Carter</span>
             <br />
             building reliable software
             <br />
-            through <span className="text-primary">automation</span>.
+            through <span className="text-primary">automation</span>
+            <span className="cursor-blink" />
           </h1>
-          <p className="mt-6 font-mono text-sm sm:text-base text-primary">
-            QA Automation Engineer <span className="text-muted-foreground">|</span> Python Developer{" "}
-            <span className="text-muted-foreground">|</span> Playwright Enthusiast
+          <p className="mt-7 font-mono text-sm sm:text-base text-primary">
+            <span className="text-muted-foreground">{"// "}</span>QA Automation Engineer{" "}
+            <span className="text-muted-foreground">·</span> Python Developer{" "}
+            <span className="text-muted-foreground">·</span> Playwright Enthusiast
           </p>
           <p className="mt-6 max-w-2xl text-base sm:text-lg text-muted-foreground leading-relaxed">
             I design end-to-end test automation frameworks and write clean Python code.
@@ -44,29 +50,63 @@ export function Hero() {
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
               href="#projects"
-              className="group inline-flex items-center gap-2 rounded-lg bg-gradient-primary px-6 py-3 font-medium text-primary-foreground transition-all hover:shadow-[0_10px_40px_-10px_oklch(0.78_0.16_175/0.5)]"
+              className="group relative inline-flex items-center gap-2 rounded-lg bg-gradient-primary px-6 py-3 font-medium text-primary-foreground transition-all hover:shadow-[0_10px_40px_-10px_oklch(0.68_0.17_245/0.6)] hover:-translate-y-0.5 shimmer overflow-hidden"
             >
               View Projects
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 rounded-lg border border-border bg-surface px-6 py-3 font-medium text-foreground transition-all hover:border-primary hover:bg-surface-elevated"
+              className="inline-flex items-center gap-2 rounded-lg glass px-6 py-3 font-medium text-foreground transition-all hover:border-primary/60 hover:-translate-y-0.5"
             >
               <Mail size={16} />
               Contact Me
             </a>
           </div>
           <div className="mt-10 flex items-center gap-5 text-muted-foreground">
-            <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors" aria-label="GitHub">
+            <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors hover:-translate-y-0.5 inline-block" aria-label="GitHub">
               <Github size={20} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors" aria-label="LinkedIn">
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors hover:-translate-y-0.5 inline-block" aria-label="LinkedIn">
               <Linkedin size={20} />
             </a>
-            <a href="mailto:hello@example.com" className="hover:text-primary transition-colors" aria-label="Email">
+            <a href="mailto:hello@example.com" className="hover:text-primary transition-colors hover:-translate-y-0.5 inline-block" aria-label="Email">
               <Mail size={20} />
             </a>
+          </div>
+        </motion.div>
+
+        {/* Terminal mock */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95, y: 20 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+          className="hidden lg:block"
+        >
+          <div className="glass-strong rounded-xl overflow-hidden shadow-[0_30px_80px_-20px_oklch(0_0_0/0.6)]">
+            <div className="flex items-center gap-2 px-4 py-3 border-b border-border bg-surface/50">
+              <span className="h-3 w-3 rounded-full bg-[#ff5f56]" />
+              <span className="h-3 w-3 rounded-full bg-[#ffbd2e]" />
+              <span className="h-3 w-3 rounded-full bg-[#27c93f]" />
+              <span className="ml-3 text-xs font-mono text-muted-foreground">~/portfolio · zsh</span>
+            </div>
+            <div className="p-5 font-mono text-sm leading-relaxed">
+              <div className="text-muted-foreground">$ whoami</div>
+              <div className="text-foreground">alex_carter</div>
+              <div className="text-muted-foreground mt-2">$ cat skills.json</div>
+              <pre className="text-foreground/90 mt-1">{`{
+  "languages": ["Python", "TypeScript"],
+  "frameworks": ["Playwright", "Pytest"],
+  "focus": "automation + DX",
+  "learning": "ML, CI/CD"
+}`}</pre>
+              <div className="text-muted-foreground mt-3">$ pytest --collect-only</div>
+              <div className="text-accent">✓ 247 tests collected</div>
+              <div className="flex items-center mt-2">
+                <span className="text-primary">$</span>
+                <span className="cursor-blink ml-2" />
+              </div>
+            </div>
           </div>
         </motion.div>
       </div>
