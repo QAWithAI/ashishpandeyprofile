@@ -30,7 +30,7 @@ export function Hero() {
             <Sparkles size={12} className="text-primary" />
           </div>
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold leading-[1.04] tracking-tight">
-            Hi, I'm <span className="text-gradient">Alex Carter</span>
+            Hi, I'm <span className="text-gradient">Ashish Kumar Pandey</span>
             <br />
             building reliable software
             <br />
