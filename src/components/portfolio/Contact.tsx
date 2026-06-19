@@ -10,7 +10,7 @@ const channels = [
 
 export function Contact() {
   return (
-    <Section id="contact" eyebrow="08 / Connect" title="Let's build something reliable" description="Open to QA Automation, Python Developer, or SDET roles — and any chance to ship better software with thoughtful people.">
+    <Section id="contact" eyebrow="08 / Connect" title="Let's build intelligent automation" description="Open to Lead QA, SDET, and AI Automation roles. Quality is never an accident — it's the result of intelligent effort, continuous learning, and relentless automation.">
       <div className="grid sm:grid-cols-3 gap-4">
         {channels.map((c, i) => (
           <motion.a
